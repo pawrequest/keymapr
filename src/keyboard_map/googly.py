@@ -38,7 +38,7 @@ def get_sheets_values():
                 'user_data/credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
-        with open('user_data/token.json', 'w') as token:
+        with open('../../user_data/token.json', 'w') as token:
             token.write(creds.to_json())
 
     try:
